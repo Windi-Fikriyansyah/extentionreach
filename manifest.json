@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ReachOwl Background Bridge",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "description": "Silent background bridge for ReachOwl. Automates social account detection with real profile extraction.",
   "permissions": [
     "cookies",
@@ -38,6 +38,16 @@
         "facebook-bridge.js"
       ],
       "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://*.facebook.com/groups/joins*"
+      ],
+      "js": [
+        "fb-scan-main.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
     }
   ],
   "action": {

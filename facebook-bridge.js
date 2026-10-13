@@ -10,7 +10,6 @@ function extractAndSaveFacebookAvatar() {
       ...document.querySelectorAll('a[href*="/me/"] img[src*="scontent"]'),
       ...document.querySelectorAll('a[aria-label*="Profil"] img, a[aria-label*="Profile"] img'),
       ...document.querySelectorAll('img[src*="scontent"]'),
-      ...document.querySelectorAll('svg image[*|href*="scontent"]')
     ];
 
     for (const el of candidates) {
@@ -20,7 +19,7 @@ function extractAndSaveFacebookAvatar() {
         break;
       }
     }
-  } catch {}
+  } catch (e) {}
 }
 
 extractAndSaveFacebookAvatar();
