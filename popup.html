@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang=id>
+<head>
+  <meta charset=UTF-8>
+  <title>ReachOwl Agent</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 280px;
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif;
+      background: #F3F0E8;
+      color: #1B1A17;
+      padding: 16px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid rgba(27, 26, 23, 0.12);
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+    }
+    .header svg {
+      width: 24px;
+      height: 15px;
+    }
+    .title {
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .badge {
+      font-size: 9px;
+      font-family: monospace;
+      text-transform: uppercase;
+      padding: 2px 5px;
+      background: #059669;
+      color: #FFF;
+      border-radius: 2px;
+      margin-left: auto;
+    }
+    .status-box {
+      background: #FFF;
+      border: 1px solid rgba(27, 26, 23, 0.1);
+      border-radius: 3px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .status-text {
+      font-size: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #059669;
+    }
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      background: #059669;
+      border-radius: 50%;
+    }
+    .desc {
+      font-size: 11px;
+      color: rgba(27, 26, 23, 0.65);
+      line-height: 1.4;
+    }
+    .footer-note {
+      font-size: 10px;
+      color: rgba(27, 26, 23, 0.45);
+      font-family: monospace;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class=header>
+    <svg viewBox=0 0 40 24>
+      <circle cx=11 cy=12 r=10 fill=none stroke=#1B1A17 stroke-width=1.5 />
+      <circle cx=29 cy=12 r=10 fill=none stroke=#1B1A17 stroke-width=1.5 />
+      <circle cx=13 cy=12 r=3.5 fill=#1B1A17 />
+      <circle cx=31 cy=12 r=3.5 fill=#1B1A17 />
+    </svg>
+    <span class=title>ReachOwl Agent</span>
+    <span class=badge>Silent</span>
+  </div>
+
+  <div class=status-box>
+    <div class=status-text>
+      <span class=pulse-dot></span>
+      <span>Background Bridge Aktif</span>
+    </div>
+    <p class=desc>
+      Ekstensi ini bekerja otomatis di latar belakang untuk membaca status Facebook &amp; Instagram.
+      Seluruh kontrol dan tombol koneksi berada langsung di aplikasi web ReachOwl.
+    </p>
+  </div>
+
+  <div class=footer-note>v2.0 • Headless Autonomous Agent</div>
+</body>
+</html>
